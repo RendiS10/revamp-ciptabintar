@@ -116,6 +116,98 @@
             </figure>
           </div>
         </section>
+        <section class="container">
+          <h2>Berita</h2>
+          <div class="carousel">
+              <div class="carousel-track">
+                  <!-- Item 1 -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <img src="image1.jpg" alt="Berita 1">
+                          <div class="card-body">
+                              <h5 class="card-title">Tindak Lanjut Jebolnya Kirmir TPU Cikutra</h5>
+                              <p class="card-text">Dinas Cipta Karya, Bina Konstruksi & Tata Ruang Kota Bandung</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <img src="image2.jpg" alt="Berita 2">
+                          <div class="card-body">
+                              <h5 class="card-title">Apa Itu KDB, KLB, GSB?</h5>
+                              <p class="card-text">Informasi tentang regulasi penataan ruang</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Item 3 -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <img src="image3.jpg" alt="Berita 3">
+                          <div class="card-body">
+                              <h5 class="card-title">Aplikasi Pelayanan Pemakaman</h5>
+                              <p class="card-text">Sistem Informasi Pelayanan Pemakaman (SIMPELMAN) Kota Bandung</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Item 4 -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <img src="image4.jpg" alt="Berita 4">
+                          <div class="card-body">
+                              <h5 class="card-title">Peningkatan Layanan Publik</h5>
+                              <p class="card-text">Dinas terus meningkatkan kualitas layanan publik</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Item 5 -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <img src="image5.jpg" alt="Berita 5">
+                          <div class="card-body">
+                              <h5 class="card-title">Pelatihan Penataan Ruang</h5>
+                              <p class="card-text">Program baru untuk masyarakat</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Navigation buttons -->
+              <button class="carousel-button prev">&lt;</button>
+              <button class="carousel-button next">&gt;</button>
+          </div>
+      </section>
+  
+      <script>
+        // JavaScript untuk Carousel
+        const track = document.querySelector('.carousel-track');
+        const prevButton = document.querySelector('.carousel-button.prev');
+        const nextButton = document.querySelector('.carousel-button.next');
+        const items = document.querySelectorAll('.carousel-item');
+        const itemWidth = items[0].getBoundingClientRect().width;
+        let currentIndex = 0;
+
+        // Pindahkan carousel ke posisi yang diinginkan
+        function moveCarousel(index) {
+            const amountToMove = -index * itemWidth;
+            track.style.transform = `translateX(${amountToMove}px)`;
+        }
+
+        // Tombol next
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < items.length - 3) { // Hanya bergerak jika masih ada konten di kanan
+                currentIndex++;
+                moveCarousel(currentIndex);
+            }
+        });
+
+        // Tombol prev
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) { // Hanya bergerak jika masih ada konten di kiri
+                currentIndex--;
+                moveCarousel(currentIndex);
+            }
+        });
+    </script>
       </article>
     </main>
   </body>
