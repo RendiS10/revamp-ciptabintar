@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Quicksand", sans-serif;
-
-  height: 100vh;
+  font-family: "Poppins", serif;
   margin: 0;
 
   display: flex;
@@ -22,7 +20,7 @@ header.header-navbar {
   justify-content: space-around;
   align-items: center;
   z-index: 9999;
-  background-color: rgba(178, 194, 255, 1);
+  background-color: rgb(101, 204, 239);
 }
 header.header-navbar .imgheader {
   width: 130px;
@@ -65,14 +63,16 @@ header.header-navbar nav.nav-header ul li a[href*="https"] {
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
+  background: linear-gradient(to bottom, transparent, white);
 }
 .containerHero {
   position: absolute;
   top: 12rem;
-  left: 30rem;
-  display: flex;
+  left: 14rem;
+  display: flex
+;
   align-items: center;
-  gap: 5rem;
+  gap: 10rem;
 }
 .headingHero {
   line-height: 1rem;
@@ -96,6 +96,7 @@ section.layanan .cs {
   height: 200px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.layanan .cs figure {
   display: flex;
@@ -116,6 +117,7 @@ section.layanan .monitoring {
   height: 200px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.layanan .monitoring figure {
   display: flex;
@@ -135,6 +137,7 @@ section.layanan .regulasi {
   height: 200px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.layanan .regulasi figure {
   display: flex;
@@ -157,6 +160,7 @@ section.layanan .faq {
   height: 200px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.layanan .faq figure {
   display: flex;
@@ -176,6 +180,7 @@ section.layanan .persyaratan {
   height: 200px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.layanan .persyaratan figure {
   display: flex;
@@ -195,6 +200,7 @@ section.layanan .peta {
   height: 200px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.layanan .peta figure {
   display: flex;
@@ -214,6 +220,7 @@ section.layanan .pengaduan {
   height: 200px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.layanan .pengaduan figure {
   display: flex;
@@ -233,6 +240,7 @@ section.layanan .websiteportal {
   height: 200px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.layanan .websiteportal figure {
   display: flex;
@@ -285,6 +293,8 @@ h2 {
 /* Carousel styling */
 .carousel {
   position: relative;
+ padding-left: 50px;
+ padding-right: 50px;
   overflow: hidden;
   width: 100%;
 }
@@ -303,8 +313,8 @@ h2 {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.card img {
-  width: 100%;
+.card iframe {
+  width: 300px;
   height: 200px;
   object-fit: cover;
 }
@@ -331,7 +341,7 @@ h2 {
   border: none;
   padding: 10px;
   cursor: pointer;
-            border-radius: 50%;
+  border-radius: 50%;
 }
 .carousel-button.prev {
   left: 10px;
