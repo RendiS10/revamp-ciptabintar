@@ -21,6 +21,7 @@ header.header-navbar {
   align-items: center;
   z-index: 9999;
   background-color: rgb(101, 204, 239);
+  gap: 35rem;
 }
 header.header-navbar .imgheader {
   width: 130px;
@@ -29,7 +30,7 @@ header.header-navbar nav.nav-header ul {
   padding-left: 0;
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
 }
 header.header-navbar nav.nav-header ul li {
   list-style-type: none;
