@@ -6,6 +6,7 @@
 body {
   font-family: "Poppins", serif;
   margin: 0;
+  scroll-behavior: smooth;
 
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@ header.header-navbar {
   justify-content: space-around;
   align-items: center;
   z-index: 9999;
-  background-color: rgb(101, 204, 239);
+  background-color: #4cc9fe;
   gap: 35rem;
 }
 header.header-navbar .imgheader {
@@ -36,16 +37,23 @@ header.header-navbar nav.nav-header ul li {
   list-style-type: none;
 }
 header.header-navbar nav.nav-header ul li a {
-  color: rgba(102, 91, 91, 1);
+  color: rgb(97, 98, 106);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
+header.header-navbar nav.nav-header ul li a:hover {
+  color: rgb(255, 255, 255); /* Warna teks berubah menjadi putih saat hover */
+  text-decoration: underline; /* Garis bawah muncul saat hover */
+}
+
 header.header-navbar nav.nav-header ul li a[href*="https"] {
-  background-color: rgba(214, 229, 246, 1);
+  background-color: #37afe1;
   box-shadow: inset white;
   padding: 10px;
   border-radius: 5px;
   width: 49px;
   height: 27px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 
 /* Hero */
@@ -76,7 +84,7 @@ header.header-navbar nav.nav-header ul li a[href*="https"] {
 }
 .headingHero {
   line-height: 1rem;
-  color: rgba(55, 96, 141, 1);
+  color: #329fce;
   font-weight: 400;
   font-size: 24px;
 }
@@ -94,16 +102,23 @@ section.layanan .cs {
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #f5f4b3;
   border-radius: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease; /* Efek transisi untuk animasi */
+}
+section.layanan .cs:hover {
+  transform: translateY(-10px); /* Naik sedikit ke atas */
 }
 section.layanan .cs figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  transition: transform 0.2s ease; /* Tambahkan efek transisi untuk animasi */
 }
+
 section.layanan .cs figure figcaption {
   text-align: center;
   color: rgba(55, 96, 141, 1);
@@ -115,15 +130,21 @@ section.layanan .monitoring {
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #f5f4b3;
   border-radius: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+section.layanan .monitoring:hover {
+  transform: translateY(-10px); /* Naik sedikit ke atas */
 }
 section.layanan .monitoring figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  transition: transform 0.2s ease; /* Tambahkan efek transisi untuk animasi */
 }
 section.layanan .monitoring figure figcaption {
   text-align: center;
@@ -135,15 +156,21 @@ section.layanan .regulasi {
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #f5f4b3;
   border-radius: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+section.layanan .regulasi:hover {
+  transform: translateY(-10px); /* Naik sedikit ke atas */
 }
 section.layanan .regulasi figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  transition: transform 0.2s ease; /* Tambahkan efek transisi untuk animasi */
 }
 section.layanan .regulasi figure img {
   margin-left: 25px;
@@ -158,15 +185,21 @@ section.layanan .faq {
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #f5f4b3;
   border-radius: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+section.layanan .faq:hover {
+  transform: translateY(-10px); /* Naik sedikit ke atas */
 }
 section.layanan .faq figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  transition: transform 0.2s ease; /* Tambahkan efek transisi untuk animasi */
 }
 section.layanan .faq figure figcaption {
   text-align: center;
@@ -178,15 +211,21 @@ section.layanan .persyaratan {
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #f5f4b3;
   border-radius: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+section.layanan .persyaratan:hover {
+  transform: translateY(-10px); /* Naik sedikit ke atas */
 }
 section.layanan .persyaratan figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  transition: transform 0.2s ease; /* Tambahkan efek transisi untuk animasi */
 }
 section.layanan .persyaratan figure figcaption {
   text-align: center;
@@ -198,15 +237,22 @@ section.layanan .peta {
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #f5f4b3;
   border-radius: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
 }
+section.layanan .peta:hover {
+  transform: translateY(-10px); /* Naik sedikit ke atas */
+}
+
 section.layanan .peta figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  transition: transform 0.2s ease; /* Tambahkan efek transisi untuk animasi */
 }
 section.layanan .peta figure figcaption {
   text-align: center;
@@ -218,15 +264,21 @@ section.layanan .pengaduan {
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #f5f4b3;
   border-radius: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+section.layanan .pengaduan:hover {
+  transform: translateY(-10px); /* Naik sedikit ke atas */
 }
 section.layanan .pengaduan figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  transition: transform 0.2s ease; /* Tambahkan efek transisi untuk animasi */
 }
 section.layanan .pengaduan figure figcaption {
   text-align: center;
@@ -238,15 +290,21 @@ section.layanan .websiteportal {
   display: flex;
   width: 200px;
   height: 200px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #f5f4b3;
   border-radius: 100%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+section.layanan .websiteportal:hover {
+  transform: translateY(-10px); /* Naik sedikit ke atas */
 }
 section.layanan .websiteportal figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat di-hover */
+  transition: transform 0.2s ease; /* Tambahkan efek transisi untuk animasi */
 }
 section.layanan .websiteportal figure figcaption {
   text-align: center;
@@ -254,6 +312,7 @@ section.layanan .websiteportal figure figcaption {
   font-size: 14px;
   font-weight: bold;
 }
+
 /* Berita */
 section.berita {
   display: flex;
@@ -352,7 +411,7 @@ h2 {
 
 footer {
   display: flex;
-  background-color: #c7c3c3;
+  background-color: #fffecb;
   padding: 20px 40px;
   font-family: Arial, sans-serif;
   flex-direction: column;
@@ -412,4 +471,49 @@ a:hover {
   color: #aaa;
   border-top: 1px solid #afa3a3;
   padding-top: 10px;
+}
+
+/* Gaya Umum */
+.containerHero {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.containerHero h1 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.logo-sipetruk {
+  width: 150px;
+  margin-bottom: 1.5rem;
+}
+
+/* Gaya untuk Ikon */
+.icon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom */
+  gap: 1rem; /* Jarak antar elemen */
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.icon-item p {
+  font-size: 1rem;
 }
